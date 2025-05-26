@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Horario Semanal por Hora</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        padding: 2rem;
+        text-align: center;
+      }
+      h1 {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: #000;
+      }
+      table {
+        margin: 0 auto;
+        width: 95%;
+        max-width: 1200px;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        table-layout: fixed;
+        word-wrap: break-word;
+        border-spacing: 4px; /* Separación leve entre filas y columnas */
+        background-color: transparent; /* Para que se vean los espacios */
+      }
+
+      th,
+      td {
+        border: 1px solid #eee;
+        padding: 10px 6px;
+        font-size: 14px;
+        vertical-align: middle;
+        text-align: center;
+        min-width: 90px;
+        max-width: 150px;
+        background-color: white;
+      }
+      th {
+        background-color: #f2f2f2;
+        font-weight: 600;
+      }
+      /* Categorías */
+      .cat-informativo {
+        background-color: #e6f0ff;
+        color: #004085;
+        font-weight: 600;
+        border-radius: 6px;
+        padding: 6px 8px;
+      }
+      .cat-cultural {
+        background-color: #e6fff0;
+        color: #1b5e20;
+        font-weight: 600;
+        border-radius: 6px;
+        padding: 6px 8px;
+      }
+      .cat-entretenimiento {
+        background-color: #f0e6ff;
+        color: #4b0082;
+        font-weight: 600;
+        border-radius: 6px;
+        padding: 6px 8px;
+      }
+      .cat-escolar {
+        background-color: #fff7e6;
+        color: #795548;
+        font-weight: 600;
+        border-radius: 6px;
+        padding: 6px 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Horario Semanal por Hora</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Hora</th>
+          <th>Lunes</th>
+          <th>Martes</th>
+          <th>Miércoles</th>
+          <th>Jueves</th>
+          <th>Viernes</th>
+          <th>Sábado</th>
+          <th>Domingo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 6:00 - 7:00 -->
+        <tr>
+          <td>6:00 - 7:00</td>
+          <td class="cat-informativo" rowspan="2">Susurros de la Noche</td>
+          <td class="cat-cultural" rowspan="2">Al Ritmo de la Luna</td>
+          <td class="cat-escolar" rowspan="2">Desvelo Cultural</td>
+          <td class="cat-entretenimiento" rowspan="2">Miércoles Musical</td>
+          <td class="cat-cultural" rowspan="2">Música Clásica</td>
+          <td class="cat-informativo" rowspan="2">Café Informativo</td>
+          <td class="cat-entretenimiento" rowspan="2">Sábados de Rumba</td>
+        </tr>
+        <tr>
+          <td>7:00 - 8:00</td>
+        </tr>
+
+        <!-- 8:00 - 9:00 -->
+        <tr>
+          <td>8:00 - 9:00</td>
+          <td class="cat-cultural">Arte y Creatividad</td>
+          <td class="cat-informativo">Noticias al Instante</td>
+          <td class="cat-cultural">Educando con Ciencia</td>
+          <td class="cat-escolar">Deporte Escolar</td>
+          <td class="cat-cultural" rowspan="2">Lecturas para el Alma</td>
+          <td class="cat-cultural">Música Clásica</td>
+          <td class="cat-informativo">Domingos de Reflexión</td>
+        </tr>
+
+        <!-- 9:00 - 10:00 -->
+        <tr>
+          <td>9:00 - 10:00</td>
+          <td class="cat-informativo">La Ventana Informativa</td>
+          <td class="cat-cultural">Ciencia y Naturaleza</td>
+          <td class="cat-cultural">Grandes Biografías</td>
+          <td class="cat-cultural">Leyendas Urbanas</td>
+          <td class="cat-cultural">Arte y Creatividad</td>
+          <td class="cat-cultural">Relatos Dominicales</td>
+          
+        </tr>
+
+        <!-- 10:00 - 11:00 -->
+        <tr>
+          <td>10:00 - 11:00</td>
+          <td class="cat-entretenimiento" rowspan="3">Rock Escolar</td>
+          <td class="cat-entretenimiento" rowspan="3">Clásicos Escolares</td>
+          <td class="cat-entretenimiento" rowspan="3">Viaje Sonoro</td>
+          <td class="cat-entretenimiento" rowspan="3">Misterios Nocturnos</td>
+          <td class="cat-cultural" rowspan="3">Conociendo el Mundo</td>
+          <td class="cat-entretenimiento" rowspan="3">
+            Clásicos en Frecuencia
+          </td>
+          <td class="cat-cultural" rowspan="3">Relatos en la Tarde</td>
+        </tr>
+        <tr>
+          <td>11:00 - 12:00</td>
+        </tr>
+        <tr>
+          <td>12:00 - 13:00</td>
+        </tr>
+
+        <!-- 13:00 - 14:00 -->
+        <tr>
+          <td>13:00 - 14:00</td>
+          <td class="cat-informativo" rowspan="2">Tertulias del Mediodía</td>
+          <td class="cat-informativo" rowspan="2">Conversando al Mediodía</td>
+          <td class="cat-informativo" rowspan="2">Hora de Noticias</td>
+          <td class="cat-informativo" rowspan="2">Voces del Mediodía</td>
+          <td class="cat-informativo" rowspan="2">Charlas al Mediodía</td>
+          <td class="cat-informativo" rowspan="2">Debates Dominicales</td>
+          <td class="cat-informativo" rowspan="2">Almuerzo Informativo</td>
+        </tr>
+        <tr>
+          <td>14:00 - 15:00</td>
+        </tr>
+
+        <!-- 15:00 - 16:00 -->
+        <tr>
+          <td>15:00 - 16:00</td>
+          <td class="cat-escolar" rowspan="3">Zona Creativa</td>
+          <td class="cat-escolar" rowspan="3">Espacio Escolar</td>
+          <td class="cat-escolar" rowspan="3">Rincón Escolar</td>
+          <td class="cat-escolar" rowspan="3">Círculo Escolar</td>
+          <td class="cat-escolar" rowspan="3">Mundo Escolar</td>
+          <td class="cat-escolar" rowspan="3">Hora Estudiantil</td>
+          <td class="cat-escolar" rowspan="3">Aprendiendo Juntos</td>
+        </tr>
+        <tr>
+          <td>16:00 - 17:00</td>
+        </tr>
+        <tr>
+          <td>17:00 - 18:00</td>
+        </tr>
+
+        <!-- 18:00 - 19:00 -->
+        <tr>
+          <td>18:00 - 19:00</td>
+          <td class="cat-escolar" rowspan="4">Noches de Diálogo</td>
+          <td class="cat-escolar" rowspan="4">Historias con Sentido</td>
+          <td class="cat-escolar" rowspan="4">Debates y Opiniones</td>
+          <td class="cat-informativo" rowspan="4">Actualidad Juvenil</td>
+          <td class="cat-escolar" rowspan="4">Recreo en las Ondas</td>
+          <td class="cat-escolar" rowspan="4">Cierre del Día</td>
+          <td class="cat-escolar" rowspan="4">Relatos en la Tarde</td>
+        </tr>
+        <tr>
+          <td>19:00 - 20:00</td>
+        </tr>
+        <tr>
+          <td>20:00 - 21:00</td>
+        </tr>
+        <tr>
+          <td>21:00 - 22:00</td>
+        </tr>
+
+        <!-- 22:00 - 23:00 -->
+        <tr>
+          <td>22:00 - 23:00</td>
+          <td class="cat-entretenimiento" rowspan="3">Noches de Jazz</td>
+          <td class="cat-entretenimiento" rowspan="3">Universo Sonoro</td>
+          <td class="cat-entretenimiento" rowspan="3">Música para Soñar</td>
+          <td class="cat-entretenimiento" rowspan="3">Música para Bailar</td>
+          <td class="cat-entretenimiento" rowspan="3">Viaje Sonoro</td>
+          <td class="cat-entretenimiento" rowspan="3">Noches de Paz</td>
+          <td class="cat-entretenimiento" rowspan="3">Misterios Nocturnos</td>
+        </tr>
+        <tr>
+          <td>23:00 - 00:00</td>
+        </tr>
+        <tr>
+          <td>00:00 - 01:00</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
